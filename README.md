@@ -15,4 +15,3 @@ This is a site that houses all of my p5.js projects:
     - Bouncing Blocks
     - Monte Carlo 
     - Leibniz Formula
-
