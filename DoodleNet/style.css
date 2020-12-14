@@ -1,0 +1,8 @@
+html, body {
+  background-color: black;
+  font-size: 32pt;
+  
+}
+canvas {
+  display: block;
+}
