@@ -4,7 +4,7 @@ This is a site that houses all of my p5.js projects:
   - Sorting Algorithms
   - Maze Generation
   - Wave Generation
-  - Chaos Game*
+  - Chaos Game
   - Times Table Visualisation 
   - Doodle Net
   - Tic Tac Toe (minimax with Alfa Beta Pruning)
