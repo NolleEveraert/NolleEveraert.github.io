@@ -24,7 +24,7 @@ function setup() {
   resultaatDiv = createDiv('0').style('color', color(255));
   resultaatDiv.position(width/2, height/2);
 
-  slider = createSlider(1, 7, 7, 1);
+  slider = createSlider(1, 7, 5, 1);
   sliderWaarde = slider.value();
   slider.position(0, 25);
   slider.style('width', '100px');
