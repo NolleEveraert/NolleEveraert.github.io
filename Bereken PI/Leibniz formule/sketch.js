@@ -16,7 +16,7 @@ function setup() {
   let y = (windowHeight - height) / 2;
   canvas.position(x, y);
   pi = 4;
-  resultaatDiv = createDiv(pi).style('color', color(255));
+  resultaatDiv = createDiv('π: ' + pi).style('color', color(255));
   resultaatDiv.position(x, y - 50);
   slider = createSlider(1, 60, 1, 1);
   slider.position(x + 170, y + height + 20);
@@ -60,7 +60,7 @@ function draw() {
     vertex(x, y);
   }
   endShape();
-  resultaatDiv.html(pi);
+  resultaatDiv.html('π: ' + pi);
   tekst.html('Speed: ' + slider.value());
   frameRate(slider.value());
 }

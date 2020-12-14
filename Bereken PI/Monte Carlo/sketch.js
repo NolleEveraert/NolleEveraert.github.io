@@ -17,7 +17,7 @@ function setup() {
   let x = (windowWidth - width) / 2;
   let y = (windowHeight - height) / 2;
   canvas.position(x, y);
-  resultaatP = createP('Approximated Value: ');
+  resultaatP = createP('π: ');
   resultaatP.position(x, y - 120);
   resultaatP.style('color', color(255));
   background(0);
@@ -71,7 +71,7 @@ function draw() {
     if (verschil < verschilRecord) {
       verschilRecord = verschil;
       recordPI = pi;
-      resultaatP.html(`Approximated Value: ${recordPI}`);
+      resultaatP.html(`π: ${recordPI}`);
     }
   }
   tekst.html('Speed: ' + slider.value());
