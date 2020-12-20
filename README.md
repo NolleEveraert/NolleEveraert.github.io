@@ -7,11 +7,12 @@ This is a site that houses all of my p5.js projects:
   - Fractals
     - Chaos Game
     - Brownian Snowflake
-  - Times Table Visualisation 
+  - Times Table Visualisation
   - Doodle Net
   - Tic Tac Toe (minimax with Alfa Beta Pruning)
   - Bouncing DVD logo
   - Different ways to calculate PI
     - Bouncing Blocks
-    - Monte Carlo 
+    - Monte Carlo
     - Leibniz Formula
+  - Snowfall
