@@ -10,6 +10,7 @@ This is a site that houses all of my p5.js projects:
     - Toothpicks
     - Barnsley Fern
     - Koch's Snowflake
+    - Phyllotaxis
   - Times Table Visualisation
   - Doodle Net
   - Tic Tac Toe (minimax with Alfa Beta Pruning)
