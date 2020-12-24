@@ -6,6 +6,7 @@ function setup() {
   //zorg dat de scrollbar weg is
   document.documentElement.style.overflow = 'hidden';
   document.body.scroll = "no";
+  noCursor();
   sneeuwvlok = [];
   huidige = new Deeltje(height/2, 0);
   background(0);
