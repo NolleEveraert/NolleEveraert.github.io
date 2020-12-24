@@ -15,6 +15,7 @@ function setup() {
   //zorg dat de scrollbar weg is
   document.documentElement.style.overflow = 'hidden';
   document.body.scroll = "no";
+  noCursor();
   zOffset = 0;
   zwaartekracht = createVector(0, 0.3);
   for (let x = 0; x < spritesheet.width; x += 16) {
