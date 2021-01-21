@@ -20,3 +20,12 @@ This is a site that houses all of my p5.js projects:
     - Monte Carlo
     - Leibniz Formula
   - Snowfall
+  
+  TO DO:
+  - Travelings salesperson
+    - Brute force
+    - Genetic algorithm
+  - Game Of Life
+  - Path finding (A star)
+  - Lissajous Table
+  - Fourier Transformation (Drawing)
