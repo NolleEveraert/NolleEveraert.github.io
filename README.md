@@ -1,8 +1,8 @@
 **https://CaptainSSnake.github.io**
 
 This is a site that houses all of my p5.js projects:
-  1: Sorting Algorithms
-  1: Maze Generation
+  1. Sorting Algorithms
+  1. Maze Generation
   - Wave Generation
   - Fractals
     - Chaos Game
