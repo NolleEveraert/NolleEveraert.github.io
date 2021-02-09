@@ -1,4 +1,4 @@
-CaptainSSnake.github.io
+**CaptainSSnake.github.io**
 
 This is a site that houses all of my p5.js projects:
   - Sorting Algorithms
@@ -22,11 +22,14 @@ This is a site that houses all of my p5.js projects:
   - Snowfall
   - Fourier Algorithms
     - Fourier Series
+  - Travelings salesperson
+    - Brute Force
+    - Lexographic Order
 
   TO DO:
   - Travelings salesperson
-    - Brute force
     - Genetic algorithm
   - Game Of Life
   - Path finding (A star)
   - Lissajous Table
+  - Solar System
