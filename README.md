@@ -1,4 +1,4 @@
-**CaptainSSnake.github.io**
+**https://CaptainSSnake.github.io**
 
 This is a site that houses all of my p5.js projects:
   - Sorting Algorithms
