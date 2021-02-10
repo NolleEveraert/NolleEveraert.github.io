@@ -41,6 +41,7 @@ function draw() {
   background(0);
   if(status != FOURIER) {
     stroke(255);
+    strokeWeight(1);
     fill(255);
     textSize(32);
     text("Draw something!", 10, 30);
