@@ -12,8 +12,6 @@ let besteOoit;
 
 let slider;
 let tekst = "Amount of Nodes: ";
-
-let XOFFSET = 275;
 let YOFFSET = 110;
 
 function setup() {
@@ -23,7 +21,7 @@ function setup() {
   document.body.scroll = "no";
 
   for (let i = 0; i < aantal; i++) {
-    let x = random(XOFFSET, width);
+    let x = random(0, width);
     let y = random(YOFFSET, height / 2);
     let v = createVector(x, y);
     steden[i] = v;
@@ -104,7 +102,7 @@ function reset() {
   volgorde = [];
   teller = 0;
   for (let i = 0; i < aantal; i++) {
-    let x = random(XOFFSET, width);
+    let x = random(0, width);
     let y = random(YOFFSET, height / 2);
     let v = createVector(x, y);
     steden[i] = v;

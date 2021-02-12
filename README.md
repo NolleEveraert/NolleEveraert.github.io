@@ -26,6 +26,7 @@ This is a site that houses all of my p5.js projects:
   1. Travelings salesperson
      1. Brute Force
      1. Lexographic Order
+  1. Solar System
 
   TO DO:
   1. Travelings salesperson
