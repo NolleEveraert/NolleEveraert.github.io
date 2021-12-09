@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!-- https://pchen66.github.io/Panolens/examples/panorama_image.html -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/x-icon" href=".././img/favicon.ico">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, shrink-to-fit=yes">
+  <title>360° Foto viewer</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <script src="three.min.js"></script>
+  <script src="panolens.min.js"></script>
+  <script>
+    const panorama = new PANOLENS.ImagePanorama( 'foto.jpg' );
+    const viewer = new PANOLENS.Viewer( { output: 'console' } );
+  viewer.add( panorama );
+  </script>
+</body>
+</html>
