@@ -1,3 +1,15 @@
+body {
+  padding: 3px;
+  background-color: black;
+  color: white;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: white;
+  color: black;
+}
+
 /* Align input and table to the left */
 .container {
   display: flex;
@@ -22,6 +34,18 @@
   margin-right: 20px; /* Adjust the spacing as needed */
 }
 
+/* Set a fixed height for the table container */
+#tableContainer2 {
+  max-height: calc(100vh - 150px); /* Adjust the height as needed */
+  overflow-y: auto;
+  display: flex; /* Use flexbox to create a horizontal layout */
+}
+
+/* Add spacing between tables */
+#tableContainer2 table:not(:last-child) {
+  margin-right: 20px; /* Adjust the spacing as needed */
+}
+
 /* Center the table */
 table {
   margin: 0 auto;
@@ -31,11 +55,11 @@ table {
 /* Add lines around the table */
 table {
   border-collapse: collapse;
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
 td {
-  border: 1px solid black;
+  border: 1px solid white;
   padding: 5px;
 }
 
@@ -63,4 +87,17 @@ body {
 #fileInput {
   width: 85px;
   overflow: hidden;
+}
+
+#darkModeButton {
+  margin-right: 10px;
+}
+
+/* Table borders in dark mode */
+.dark-mode table {
+  border-color: black;
+}
+
+.dark-mode td {
+  border-color: black;
 }

@@ -8,12 +8,16 @@
     <script src="parsing.js"></script>
     <script src="arrangement.js"></script>
     <script src="showResult.js"></script>
+    <script src="darkMode.js"></script>
   </head>
   <body>
     <div class="container">
       <div>
         <p>Upload een Excel bestand met een kolom "Naam" en "Beschikbare Plaatsen"</p>
-        <input type="file" id="fileInput" />
+        <div id="tableContainer2">
+          <button id="darkModeButton" onclick="toggleDarkMode()">Light Mode</button>
+          <input type="file" id="fileInput" />
+        </div>
       </div>
       <div id="tableContainer"></div>
     </div>
