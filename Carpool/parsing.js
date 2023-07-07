@@ -9,9 +9,9 @@ function parsing(table) {
       rowValues.push(cell.innerText.trim());
     }
 
-    if (rowValues.length > 0) {
+    if (rowValues[0] !== "" && rowValues[1] !== "" && rowValues.length === 2) {
       columns.push(rowValues);
     }
   }
-  console.log(arrangeSeats(columns));
+  showResult(arrangeSeats(columns));
 }
