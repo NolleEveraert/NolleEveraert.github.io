@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
       table.appendChild(tableCaption);
 
       tableContainer.appendChild(table);
-
+      parsing(tbody);
       // Reset file input value to allow selecting the same file again
       fileInput.value = "";
     };
