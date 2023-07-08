@@ -1,4 +1,7 @@
-function parsing(table) {
+import { arrangeSeats } from "./arrangement.js";
+import { showResult } from "./showResult.js";
+
+export default function parsing(table) {
   const rows = table.getElementsByTagName("tr");
   const columns = [];
   for (let i = 1; i < rows.length; i++) {

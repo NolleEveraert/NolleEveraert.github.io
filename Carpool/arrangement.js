@@ -1,4 +1,4 @@
-function arrangeSeats(people) {
+export function arrangeSeats(people) {
   let cars = [];
   let passengers = [];
   // Separate people with cars and without cars

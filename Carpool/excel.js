@@ -1,3 +1,5 @@
+import parsing from "./parsing.js";
+
 document.addEventListener("DOMContentLoaded", function () {
   let tableContainer = document.getElementById("tableContainer");
   let fileInput = document.getElementById("fileInput");
