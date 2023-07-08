@@ -1,5 +1,3 @@
-let x = 0;
-
 function setup() {
   console.log("setup");
 
@@ -16,10 +14,8 @@ function setup() {
 function draw() {
   let canvasCreated = document.getElementById("canvasCreated").textContent;
   if (canvasCreated == "true") {
-    background(x);
+    background(0);
     drawCar();
-    x++;
-    x = x % 255;
   }
 }
 
