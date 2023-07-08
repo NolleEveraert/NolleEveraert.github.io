@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="connect-src 'self' data:" />
+
     <link rel="shortcut icon" type="image/x-icon" href=".././img/favicon.ico" />
     <title>Carpool</title>
+
     <link rel="stylesheet" type="text/css" href="./styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
@@ -17,6 +20,7 @@
     <script type="module" src="./showResult.js"></script>
     <script src="./darkMode.js"></script>
   </head>
+
   <body>
     <var id="canvasCreated" hidden="hidden">false</var>
     <div class="container">

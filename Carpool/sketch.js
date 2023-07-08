@@ -1,8 +1,5 @@
 function setup() {
-  console.log("setup");
-
   let canvasCreated = document.getElementById("canvasCreated").textContent;
-  console.log(canvasCreated);
   if (canvasCreated == "true") {
     const parent = document.getElementById("myCanvas");
     let canvas = createCanvas(parent.offsetWidth, window.innerHeight - 125);
