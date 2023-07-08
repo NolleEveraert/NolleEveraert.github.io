@@ -64,10 +64,10 @@ function drawCar(x, y, w, h, children) {
   image(seat, -w / 7, -h / 35, w / SCALE, h / SCALE);
   textSize(144 / SCALE);
   textAlign(CENTER);
-  text("Ouder", -w / 7, -h / 35 + h / TXTOFFSET);
+  text("Ouder", -w / 7, -h / 35 + (h / TXTOFFSET) * 1.1);
   //children
   image(seat, w / 7, -h / 35, w / SCALE, h / SCALE);
-  text(children[0], w / 7, -h / 35 + h / TXTOFFSET);
+  text(children[0], w / 7, -h / 35 + (h / TXTOFFSET) * 1.1);
   let yPos = 0;
   for (let i = 1; i < children.length; i++) {
     let xPos;
@@ -76,17 +76,17 @@ function drawCar(x, y, w, h, children) {
         xPos = -w / 7;
         yPos += (1.7 * h) / SCALE;
         image(seat, xPos, -h / 35 + yPos, w / SCALE, h / SCALE);
-        text(children[i], xPos, -h / 35 + yPos + h / TXTOFFSET);
+        text(children[i], xPos, -h / 35 + yPos + (h / TXTOFFSET) * 1.1);
         break;
       case 1:
         xPos = w / 7;
         image(seat, xPos, -h / 35 + yPos, w / SCALE, h / SCALE);
-        text(children[i], xPos, -h / 35 + yPos + h / TXTOFFSET);
+        text(children[i], xPos, -h / 35 + yPos + (h / TXTOFFSET) * 1.1);
         break;
       case 2:
         xPos = 0;
         image(seat, xPos, -h / 35 + yPos, w / SCALE, h / SCALE);
-        text(children[i], xPos, -h / 35 + yPos + (1.4 * h) / TXTOFFSET);
+        text(children[i], xPos, -h / 35 + yPos + ((1.4 * h) / TXTOFFSET) * 1.1);
         break;
     }
   }
