@@ -68,8 +68,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const containerTopOffset = tableContainer.offsetTop;
     const containerBottomMargin = 20; // Adjust the margin as needed
 
-    const maxHeight = screenHeight - containerTopOffset - containerBottomMargin;
-    tableContainer.style.maxHeight = `${maxHeight}px`;
+    const remainingHeight = screenHeight - containerTopOffset - containerBottomMargin;
+    tableContainer.style.maxHeight = `${remainingHeight}px`;
   }
 
   window.addEventListener("resize", setTableContainerHeight);

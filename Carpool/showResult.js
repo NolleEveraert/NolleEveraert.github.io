@@ -33,4 +33,12 @@ export function showResult(result) {
   table.appendChild(tableCaption);
 
   tableContainer.appendChild(table);
+
+  const canvas = document.createElement("div");
+  canvas.id = "myCanvas";
+  tableContainer.appendChild(canvas);
+
+  const canvasCreated = document.getElementById("canvasCreated");
+  canvasCreated.textContent = "true";
+  setup();
 }
