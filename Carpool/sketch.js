@@ -42,12 +42,13 @@ function draw() {
     }
     let yOff = HEIGHT / 4;
     for (let i = 0; i < cars.length; i++) {
-      if (cars[i] !== "") {
+      if (cars[i] !== "" && cars[i] !== undefined && cars[i] !== "Niet genoeg beschikbare plaatsen") {
         if (i % 6 == 0 && i !== 0) {
           yOff += HEIGHT / 2;
           resize = i / 6;
         }
         let xOff = WIDTH / 4 + ((i % 6) * WIDTH) / 2;
+
         let passengers = cars[i].split(": ")[1].split(", ");
         drawCar(xOff, yOff, WIDTH / 2, HEIGHT / 2, passengers);
       }
