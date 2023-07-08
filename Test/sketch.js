@@ -4,55 +4,22 @@ const WIDTH = 380;
 const HEIGHT = 700;
 const SCALE = 10;
 const TXTOFFSET = 13;
-let cars = "";
-let inverted = false;
-
+const users = ["Lid 1", "Lid 2451", "Lid 36556", "Lid 4", "Lid 5", "Lid 41561", "Lid 61191"];
 function preload() {
   car = loadImage("Car.png");
   seat = loadImage("Seat.png");
 }
 
 function setup() {
-  let canvasCreated = document.getElementById("canvasCreated").textContent;
-  if (canvasCreated == "true") {
-    const parent = document.getElementById("myCanvas");
-    let canvas = createCanvas(parent.offsetWidth, window.innerHeight - 125);
-    canvas.parent("myCanvas");
-    background(0);
-    cars = document.getElementById("result").textContent.split("\n");
-  }
+  createCanvas(windowWidth, windowHeight);
+  background(0);
+  car = invertImageColors(car);
+  seat = invertImageColors(seat);
 }
 
 function draw() {
-  let canvasCreated = document.getElementById("canvasCreated").textContent;
-  if (canvasCreated == "true") {
-    const lightMode = document.getElementById("darkModeButton").textContent;
-    if (lightMode === "Light Mode" && !inverted) {
-      car = invertImageColors(car);
-      seat = invertImageColors(seat);
-      fill(255);
-      inverted = true;
-      background(0);
-    } else if (lightMode === "Dark Mode" && inverted) {
-      car = invertImageColors(car);
-      seat = invertImageColors(seat);
-      background(255);
-      inverted = false;
-      fill(0);
-    }
-    let yOff = HEIGHT / 4;
-    for (let i = 0; i < cars.length; i++) {
-      if (cars[i] !== "") {
-        if (i % 6 == 0 && i !== 0) {
-          yOff += HEIGHT / 2;
-          resize = i / 6;
-        }
-        let xOff = WIDTH / 4 + ((i % 6) * WIDTH) / 2;
-        let passengers = cars[i].split(": ")[1].split(", ");
-        drawCar(xOff, yOff, WIDTH / 2, HEIGHT / 2, passengers);
-      }
-    }
-  }
+  fill(255);
+  drawCar(width / 2, height / 2, WIDTH, HEIGHT, users);
 }
 
 function drawCar(x, y, w, h, children) {
@@ -79,14 +46,14 @@ function drawCar(x, y, w, h, children) {
         text(children[i], xPos, -h / 35 + yPos + h / TXTOFFSET);
         break;
       case 1:
-        xPos = w / 7;
-        image(seat, xPos, -h / 35 + yPos, w / SCALE, h / SCALE);
-        text(children[i], xPos, -h / 35 + yPos + h / TXTOFFSET);
-        break;
-      case 2:
         xPos = 0;
         image(seat, xPos, -h / 35 + yPos, w / SCALE, h / SCALE);
         text(children[i], xPos, -h / 35 + yPos + (1.4 * h) / TXTOFFSET);
+        break;
+      case 2:
+        xPos = w / 7;
+        image(seat, xPos, -h / 35 + yPos, w / SCALE, h / SCALE);
+        text(children[i], xPos, -h / 35 + yPos + h / TXTOFFSET);
         break;
     }
   }

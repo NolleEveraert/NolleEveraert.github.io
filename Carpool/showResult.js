@@ -1,13 +1,14 @@
 import { downloadPDF } from "./downloadPDF.js";
 
 export function showResult(result) {
-  console.log(result);
-
   const downloadButton = document.getElementById("downloadButton");
   downloadButton.removeAttribute("hidden");
   downloadButton.addEventListener("click", () => {
     downloadPDF(result);
   });
+
+  const resultVar = document.getElementById("result");
+  resultVar.textContent = result;
 
   const table = document.createElement("table");
   const tbody = document.createElement("tbody");
